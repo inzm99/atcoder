@@ -42,3 +42,34 @@ for i in range(S//3):
 
 
 print(ans)
+
+# %%
+# C
+# ベン図
+mod= 10**9+7
+N=int(input())
+# all
+A = pow(10,N,mod)
+# no 0
+B = pow(9,N,mod)
+# no 9
+C = pow(9,N,mod)
+# no 0 and no 9
+D = pow(8,N,mod)
+
+ans = ((A-B) + (A - C)-(A - D))%mod
+print(ans)
+
+# %%
+# D
+# DP
+
+S = int(input())
+mod= 10**9+7
+dp = [0]* (S+1)
+dp[0] = 1
+
+for i in range(3,S+1):
+    dp[i] = dp[i-3] + dp[i-1]
+
+print(dp[S]%mod)
