@@ -1,11 +1,11 @@
-# %%
+# %% A
 x,y=map(int,input().split())
 if abs(x-y) <=2:
     print('Yes')
 else:
     print('No')
 
-# %%
+# %% B
 
 import numpy as np
 n =int(input())
@@ -17,7 +17,7 @@ if np.dot(a,b) ==0:
 else:
     print('No')
 
-# %%
+# %% C
 
 n = int(input())
 a = list(map(int,input().split()))
@@ -44,7 +44,7 @@ if max_left > max_right:
 else:
     print(max_left_i)
 
-# %%
+# %% D
 
 n, prime = map(int,input().split())
 
