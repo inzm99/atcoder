@@ -71,7 +71,3 @@ for i in range(n):
     if sumhalf < 0:
         break
 print(ans)
-
-
-
-
